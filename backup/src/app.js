@@ -111,7 +111,19 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function showFahrenheitTemp(event){
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#fahrenheit");
+  let fahrenheitTemp = (celciusTemperature x 9)/5 + 32;
+  temperatureElement.innerHTML = Math.round(farhenheitTemp);
+}
+
+let celsiusTemperature = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 search("New York");
