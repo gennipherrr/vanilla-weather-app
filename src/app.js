@@ -114,7 +114,7 @@ function handleSubmit(event) {
 function showFahrenheitTemp(event){
   event.preventDefault();
   let temperatureElement = document.querySelector("#fahrenheit");
-  let farhenheitTemp = (celciusTemperature x 9)/5 + 32;
+  let fahrenheitTemp = (celciusTemperature x 9)/5 + 32;
   temperatureElement.innerHTML = Math.round(farhenheitTemp);
 }
 
