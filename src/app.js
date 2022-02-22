@@ -116,6 +116,7 @@ function convertToFar(event) {
   let tempElement = document.querySelector("#temperature");
   let temperature = tempElement.innerHTML;
   tempElement.innerHTML = 66;
+  console.log(Math.round((temperature - 32) * 5/9);
   //tempElement.innerHTML = Math.round((temperature - 32) * 5/9;
 }
 
@@ -124,6 +125,7 @@ function convertToCels(event) {
   let tempElement = document.querySelector("#temperature");
   let temperature = tempElement.innerHTML;
   tempElement.innerHTML = 19;
+  console.log(Math.round(temperature * 9/5) + 32));
   //tempElement.innerHTML = Math.round((temperature * 9/5) + 32);
 }
 let farLink = document.querySelector("#farh");
