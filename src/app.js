@@ -122,7 +122,7 @@ function convertToCels(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temperature");
   let temperature = tempElement.innerHTML;
-  tempElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
+  tempElement.innerHTML = Math.round((temperature * 9/5) + 32);
 }
 let farLink = document.querySelector("#farh");
 farLink.addEventListener("click", convertToFar);
