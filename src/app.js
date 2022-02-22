@@ -115,14 +115,16 @@ function convertToFar(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temperature");
   let temperature = tempElement.innerHTML;
-  tempElement.innerHTML = Math.round((temperature - 32) * 5/9;
+  tempElement.innerhtml = 66;
+  //tempElement.innerHTML = Math.round((temperature - 32) * 5/9;
 }
 
 function convertToCels(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temperature");
   let temperature = tempElement.innerHTML;
-  tempElement.innerHTML = Math.round((temperature * 9/5) + 32);
+  tempElement.innerhtml = 19;
+  //tempElement.innerHTML = Math.round((temperature * 9/5) + 32);
 }
 let farLink = document.querySelector("#farh");
 farLink.addEventListener("click", convertToFar);
