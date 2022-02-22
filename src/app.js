@@ -113,7 +113,7 @@ function handleSubmit(event) {
 
 function convertToFar(event) {
   event.preventDefault();
-  let tempElement = document.querySelector("#currWeather");
+  let tempElement = document.querySelector("#temperature");
   let temperature = tempElement.innerHTML;
   tempElement.innerHTML = 66;
   //Math.round((temperature * 9) / 5 + 32);
@@ -121,7 +121,7 @@ function convertToFar(event) {
 
 function convertToCels(event) {
   event.preventDefault();
-  let tempElement = document.querySelector("#currWeather");
+  let tempElement = document.querySelector("#temperature");
   let temperature = tempElement.innerHTML;
   tempElement.innerHTML = 19;
   //Math.round((temperature * 9) / 5 + 32);
