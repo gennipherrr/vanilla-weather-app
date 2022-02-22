@@ -111,6 +111,27 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function convertToFar(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#currWeather");
+  let temperature = tempElement.innerHTML;
+  tempElement.innerHTML = 66;
+  //Math.round((temperature * 9) / 5 + 32);
+}
+
+function convertToCels(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#currWeather");
+  let temperature = tempElement.innerHTML;
+  tempElement.innerHTML = 19;
+  //Math.round((temperature * 9) / 5 + 32);
+}
+let farLink = document.querySelector("#farh");
+farLink.addEventListener("click", convertToFar);
+
+let celLink = document.querySelector("#celc");
+celLink.addEventListener("click", convertToCels);
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
